@@ -415,7 +415,7 @@ const LandingPage = () => {
         </motion.div>
 
         {/* Scroll Indicator */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, y: [0, 10, 0] }}
           transition={{
@@ -423,7 +423,7 @@ const LandingPage = () => {
             y: { duration: 2, repeat: Infinity },
           }}
           className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-        >
+        > */}
           <div className="w-6 h-10 rounded-full border-2 border-cyan-400 flex justify-center pt-2">
             <motion.div
               animate={{ y: [0, 12, 0] }}
@@ -432,7 +432,7 @@ const LandingPage = () => {
               style={{ boxShadow: '0 0 10px rgba(56, 189, 248, 0.8)' }}
             />
           </div>
-        </motion.div>
+        {/* </motion.div> */}
       </div>
       </div>
     </>
