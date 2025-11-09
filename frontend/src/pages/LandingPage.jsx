@@ -155,10 +155,10 @@ const LandingPage = () => {
                     }}
                   >
                     <div
-                      className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500/40 to-cyan-500/40 backdrop-blur-sm border border-purple-400/50 flex items-center justify-center"
+                      className="w-20 h-20 rounded-full bg-gradient-to-br from-purple-500/40 to-cyan-500/40 backdrop-blur-sm border border-purple-400/50 flex items-center justify-center"
                       style={{ boxShadow: '0 0 20px rgba(168, 85, 247, 0.6)' }}
                     >
-                      <Icon size={20} className="text-purple-300" />
+                      <Icon size={60} className="text-purple-300" />
                     </div>
                   </motion.div>
                 ))}
@@ -329,17 +329,13 @@ const LandingPage = () => {
         >
           <motion.div
             animate={{
-              boxShadow: [
-                '0 0 20px rgba(56, 189, 248, 0.6)',
-                '0 0 40px rgba(168, 85, 247, 0.8)',
-                '0 0 20px rgba(34, 211, 238, 0.6)',
-              ],
+              rotateY: [0, 360],
             }}
-            transition={{ duration: 4, repeat: Infinity }}
-            className="p-8 rounded-2xl bg-gradient-to-br from-cyan-500/10 to-purple-500/10 backdrop-blur-sm border border-cyan-400/30"
+            transition={{ duration: 5, repeat: Infinity, ease: 'linear' }}
+            className="p-4 rounded-2xl bg-gradient-to-br from-cyan-500/10 to-purple-500/10 backdrop-blur-sm border border-cyan-400/30"
             style={{ transformStyle: 'preserve-3d' }}
           >
-            <Code2 size={80} className="text-cyan-400" />
+            <img src="/logo.jpg" alt="Logo" className="w-12 h-12 md:w-16 md:h-16 object-contain" />
           </motion.div>
         </motion.div>
 
